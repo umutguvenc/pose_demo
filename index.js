@@ -12,7 +12,7 @@ app.use(morgan('dev'));
 app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.json());
 app.use('/', function(req, res) {
-    res.redirect(path.join(__dirname, '/public', 'index.html'));
+    res.redirect('/public');
 })
 
 app.use((req, res, next) => {
