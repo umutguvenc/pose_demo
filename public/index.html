@@ -11,13 +11,13 @@
     <script src="./javascript/control_utils.js"></script>
     <script src="./javascript/drawing_utils.js"></script>
     <script src="./javascript/pose.js"></script>
-    <title>Curl Counter</title>
+    <title>Curl Sayimi</title>
 </head>
 
 <body>
     <div class="container">
         <video class="input_video"></video>
-        <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+        <canvas class="output_canvas" width="480px" height="800px"></canvas>
         <!-- <canvas class="counter_canvas" width="200px" height="720px"></canvas> -->
         <div class="loading">
             <div class="spinner"></div>
@@ -25,20 +25,14 @@
                 Loading
             </div>
         </div>
-        <a class="abs logo" href="https://github.com/baoanh1310/pose_demo" target="_blank">
+        <a class="abs logo" href="https://innofluxtech.com" target="_blank">
             <div style="display: flex;align-items: center;bottom: 0;right: 10px;">
-                <img class="logo" src="logo_white.png" alt="" style="
+                <img class="logo" src="C:\Users\umut\Downloads\Proximity-Push-Up-Counter-master\Proximity-Push-Up-Counter-master\pose_demo\logo.jpg" alt="" style="
           height: 50px;">
-                <span class="title">Group 02 - AI Project</span>
+                <span class="title">str.Zone Project</span>
             </div>
         </a>
-        <div class="shoutout">
-            <div>
-                <a href="https://github.com/baoanh1310/pose_demo">
-                    Click here for more info
-                </a>
-            </div>
-        </div>
+        
     </div>
     <div class="control-panel">
     </div>
@@ -170,7 +164,7 @@ new ControlPanel(controlsElement, {
         minTrackingConfidence: 0.2
     })
     .add([
-        new StaticText({ title: 'Curl Counter Mode' }),
+        new StaticText({ title: 'str.Zone Curl Counter Mode' }),
         fpsControl,
         new Toggle({ title: 'Right Hand Practice', field: 'selfieMode' }),
         // new Slider({
